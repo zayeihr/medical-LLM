@@ -13,36 +13,34 @@ You can install the required libraries using pip:
 pip install canvasapi openai python-dotenv requests llama_index
 Setup
 Clone the repository or download the scripts to your local machine.
+```
 
-Create a .env file in the same directory as the scripts and add your API keys:
 
-env
-Copy code
-MEDICAL_API=<your_medical_api_key>
-OPENAI_API_KEY=<your_openai_api_key>
-Ensure the directory structure is set up to include a Docs folder where the downloaded files will be stored.
-Scripts Overview
+## Scripts Overview
 1. download_files.py
 This script downloads medical documents from a specified database and saves them into a structured directory under Docs.
 
 ## How to Use:
+
+```sh
 Open download_files.py.
-Modify the script to use your medical database API instead of the Canvas API if necessary.
+Modify the script to use your medical database API.
 Run the script:
 sh
 Copy code
 python download_files.py
-
-The script will:
+```
+## The script will:
 
 Connect to the medical database using the provided API key.
 Retrieve a list of medical records.
 Download PDF files associated with each record.
 Save the files into a directory structure under Docs.
-2. process_files.py
+
+## 2. process_files.py
 This script reads the downloaded medical documents from the Docs directory and processes them using SimpleDirectoryReader.
 
-How to Use:
+### How to Use:
 Ensure that download_files.py has been run and the Docs directory contains the downloaded files.
 Open process_files.py.
 Run the script:
