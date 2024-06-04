@@ -1,0 +1,5 @@
+.env
+NotesLLM
+Docs
+*.cpython
+*.pyc
