@@ -1,6 +1,8 @@
-# Medical Document Downloader and Processor
+# Medical Document Processor with RAG and LLM implementation
 
 This project consists of two scripts that work together to download medical documents from a database and process them. The first script downloads the documents and organizes them into a directory structure, while the second script reads and processes the downloaded documents.
+
+This project is part of a Retrieval-Augmented Generation (RAG) and Large Language Model (LLM) Implementation using LangChain, done during my student attachment stint with Amazon Web Services (AWS) and AI Singapore.
 
 ## Prerequisites
 
