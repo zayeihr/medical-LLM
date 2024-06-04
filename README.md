@@ -41,22 +41,12 @@ Save the files into a directory structure under Docs.
 This script reads the downloaded medical documents from the Docs directory and processes them using SimpleDirectoryReader.
 
 ### How to Use:
+
+```sh
 Ensure that download_files.py has been run and the Docs directory contains the downloaded files.
 Open process_files.py.
 Run the script:
 sh
 Copy code
 python process_files.py
-The script will:
-
-Iterate over the subdirectories in the Docs directory.
-Use SimpleDirectoryReader to load data from the files in each subdirectory.
-Collect all loaded data into a list named sources.
-Print the loaded data.
-Customization
-Adapting to a Medical Database
-To adapt download_files.py for use with a specific medical database:
-
-Replace the import and initialization of canvasapi with the appropriate library for your medical database.
-Modify the data retrieval and filtering logic to match the structure and attributes of your medical data.
-Adjust the exception handling to match the exceptions raised by the medical database API.
+```
